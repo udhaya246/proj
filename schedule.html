@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Events</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Schedule Events</h1>
+
+    <!-- Form to schedule a new event -->
+    <section>
+        <h2>Schedule a New Event</h2>
+        <form id="eventForm">
+            <label for="eventName">Event Name:</label>
+            <input type="text" id="eventName" placeholder="Enter Event Name" required>
+
+            <label for="eventDate">Event Date:</label>
+            <input type="date" id="eventDate" required>
+
+            <label for="eventTime">Event Time:</label>
+            <input type="time" id="eventTime" required>
+
+            <label for="eventLocation">Location:</label>
+            <input type="text" id="eventLocation" placeholder="Enter Location" required>
+
+            <button type="submit">Add Event</button>
+        </form>
+    </section>
+
+    <!-- Table to display scheduled events -->
+    <section>
+        <h2>Scheduled Events</h2>
+        <table id="eventTable">
+            <thead>
+                <tr>
+                    <th>Event Name</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Location</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dynamic content will be added here by JavaScript -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="schedule.js"></script>
+</body>
+</html>

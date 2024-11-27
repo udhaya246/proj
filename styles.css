@@ -1,0 +1,705 @@
+/* Existing styles */
+/* General Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+.main-header {
+    background-color: #4CAF50; /* Primary theme color */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.main-nav ul li {
+    display: inline;
+}
+
+.main-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+    background-color: #45a049; /* Hover color */
+}
+
+.content {
+    margin-top: 100px; /* Space for fixed header */
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Adding Some More Colors and Themes */
+body {
+    background: linear-gradient(to right, #f4f4f4, #e2e2e2);
+}
+
+.main-header {
+    background: linear-gradient(to right, #4CAF50, #45a049);
+}
+
+.main-nav ul li a {
+    background-color: #5cb85c;
+    color: #ffffff;
+}
+
+.main-nav ul li a:hover {
+    background-color: #4CAF50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main-nav ul li a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('schedule.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+.homepage, .login-page, .schedule-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.welcome-text h1 {
+    font-size: 48px;
+    color: #fff;
+    animation: fadeInDown 1s;
+}
+
+.welcome-text p {
+    font-size: 24px;
+    color: #fff;
+    animation: fadeInUp 1.5s;
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #ffcc00;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    animation: fadeInUp 2s;
+}
+
+button:hover {
+    background-color: #e6b800;
+}
+
+.login-form {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-form input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #ffcc00;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.planner-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 40px auto;
+    border-radius: 8px;
+}
+
+/* Header Styles */
+.planner-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Container Styles */
+.planner-form-container {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.event-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-form label {
+    font-size: 16px;
+    color: #555;
+}
+
+.event-form input,
+.event-form select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.event-form button {
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.event-form button:hover {
+    background-color: #45a049;
+}
+/* General Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.schedule-page {
+    padding: 20px;
+}
+
+.schedule-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.schedule-container {
+    overflow-x: auto;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.schedule-table th,
+.schedule-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.schedule-table th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+}
+
+.schedule-table td {
+    font-size: 14px;
+    color: #333;
+}
+
+.schedule-table .shift {
+    background-color: #f2f2f2;
+}
+
+.schedule-table .on-leave {
+    background-color: #f9c2c2;
+    color: #d9534f;
+}
+
+.schedule-table .flexible {
+    background-color: #d4edda;
+    color: #28a745;
+}
+
+.schedule-table .weekend {
+    background-color: #e2e3e5;
+    color: #6c757d;
+}
+
+
+/* Planner Table Container Styles */
+.planner-container {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.planner-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.planner-table th, .planner-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.planner-table th {
+    background-color: #3e2a1f;
+    color: white;
+    font-size: 18px;
+}
+
+.planner-table td {
+    font-size: 16px;
+    color: #555;
+}
+
+.planner-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.planner-table tr:hover {
+    background-color: #f1f1f1;
+}
+/* General Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+.main-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.main-nav ul li {
+    display: inline;
+}
+
+.main-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+    background-color: #45a049;
+}
+
+/* Content Styles */
+.homepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-image: url('schedule.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.welcome-text h1 {
+    font-size: 48px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.welcome-text p {
+    font-size: 24px;
+    color: white;
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #ffcc00;
+    color: #000;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e6b800;
+}
+
+/* Login Page Styles */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.login-form-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-form label {
+    font-size: 16px;
+    color: #555;
+}
+
+.login-form input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.login-form button {
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+.attendance-container {
+    margin: 20px 0;
+}
+
+.attendance-form {
+    margin-bottom: 20px;
+}
+
+#attendance-history-list {
+    list-style: none;
+    padding: 0;
+}
+
+#attendance-history-list li {
+    padding: 5px 10px;
+    background-color: #f5f5f5;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+.reschedule-container {
+    margin: 20px 0;
+}
+
+.reschedule-form {
+    margin-bottom: 20px;
+}
+
+#rescheduled-shift-list {
+    list-style: none;
+    padding: 0;
+}
+
+#rescheduled-shift-list li {
+    padding: 5px 10px;
+    background-color: #f5f5f5;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+.leave-container {
+    margin: 20px 0;
+}
+
+.leave-form {
+    margin-bottom: 20px;
+}
+
+#leave-list {
+    list-style: none;
+    padding: 0;
+}
+
+#leave-list li {
+    padding: 5px 10px;
+    background-color: #f5f5f5;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+/* General styles for all pages */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #2c3e50;
+}
+
+/* Table styles */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+thead {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+thead th {
+    padding: 15px;
+    text-align: left;
+}
+
+tbody td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+tbody td:last-child {
+    text-align: center;
+}
+
+th, td {
+    text-align: left;
+    padding: 12px;
+}
+
+/* Buttons */
+.book-button, .reschedule-button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.book-button:hover, .reschedule-button:hover {
+    background-color: #2980b9;
+}
+
+/* Task/Status styles */
+td .status {
+    font-weight: bold;
+    color: #e74c3c; /* Red for tasks not completed */
+}
+
+td .status.completed {
+    color: #27ae60; /* Green for completed tasks */
+}
+
+/* Reschedule page specific styles */
+.reschedule-reason {
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+tbody td input[type="date"] {
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Planner priority styles */
+td .priority-high {
+    color: #e74c3c; /* Red for high priority */
+}
+
+td .priority-medium {
+    color: #f39c12; /* Orange for medium priority */
+}
+
+td .priority-low {
+    color: #2ecc71; /* Green for low priority */
+}
+
+/* Attendance tracker percentage */
+td .attendance-percentage {
+    font-weight: bold;
+    color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tbody td {
+        display: block;
+        width: 100%;
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    tbody td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        width: 45%;
+        padding-left: 15px;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    tbody tr {
+        margin-bottom: 15px;
+        border-bottom: 2px solid #ddd;
+    }
+}
